@@ -107,7 +107,7 @@ export class HomeComponent {
     console.log(this.data.groups);
   }
 
-  vc: Web5.VerifiableCredential | null = null;
+  vc: VerifiableCredential | null = null;
   vcData: any = null;
 
   sanitizeHtml(html: string): SafeHtml {
