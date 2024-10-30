@@ -1,0 +1,24 @@
+<h1 class="headline" id="help">Identification Verification</h1>
+
+@if(loading) {
+<h3 class="loading">Loading... please wait...</h3>
+} @else {
+
+<p class="ellipsis">
+  {{ did }}
+</p>
+
+@if (vcData) {
+<h2>{{ vcData.name }}</h2>
+<p>
+  {{ vcData.identifier }}
+</p>
+<p>
+  {{ vcData.dateOfBirth }}
+</p>
+<p>@if (vcData.gender == 'M') { Male } @else { Female }</p>
+<p>
+  <img src="data:image/png;base64,{{ vcData.photo }}" />
+</p>
+
+} }
