@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>FreeID Credential Verification</title>
-    <meta charset="UTF-8">
-</head>
-<body>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
     <h1>FreeID Credential Verification</h1>
 
     <div id="credential-display"></div>
 
     <script>
-        function showCredential() {
-            const params = new URLSearchParams(window.location.search);
-            const credential = params.get('credential');
-            if (credential) {
-                document.getElementById('credential-display').textContent = credential;
-            } else {
-                document.getElementById('credential-display').textContent = 'No credential provided.';
-            }
+      function showCredential() {
+        const params = new URLSearchParams(window.location.search);
+        const credential = params.get("did");
+        if (credential) {
+          document.getElementById("credential-display").textContent =
+            credential;
+        } else {
+          document.getElementById("credential-display").textContent =
+            "No credential provided.";
         }
-        window.onload = showCredential;
+      }
+
+      window.onload = showCredential;
     </script>
-</body>
+  </body>
 </html>
