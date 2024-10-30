@@ -6,5 +6,20 @@
 </head>
 <body>
     <h1>FreeID Credential Verification</h1>
+
+    <div id="credential-display"></div>
+
+    <script>
+        function showCredential() {
+            const params = new URLSearchParams(window.location.search);
+            const credential = params.get('credential');
+            if (credential) {
+                document.getElementById('credential-display').textContent = credential;
+            } else {
+                document.getElementById('credential-display').textContent = 'No credential provided.';
+            }
+        }
+        window.onload = showCredential;
+    </script>
 </body>
 </html>
