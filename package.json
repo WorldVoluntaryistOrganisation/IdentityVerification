@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4242",
-    "build": "ng build --configuration development",
-    "deploy": "ng deploy --configuration development --repo=https://github.com/WorldVoluntaryistOrganisation/IdentityVerification.git --cname=freeid.liberstad.com --name=SondreB --email=sondre@outlook.com",
+    "build": "ng build",
+    "deploy": "ng deploy --repo=https://github.com/WorldVoluntaryistOrganisation/IdentityVerification.git --cname=freeid.liberstad.com --name=SondreB --email=sondre@outlook.com",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
