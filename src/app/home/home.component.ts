@@ -4,11 +4,12 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { DataService } from '../data.service';
 import { VerifiableCredential } from '@web5/credentials';
+import { DidPipe } from '../pipes/did.pipe';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, KeyValuePipe, RouterModule],
+  imports: [CommonModule, KeyValuePipe, RouterModule, DidPipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

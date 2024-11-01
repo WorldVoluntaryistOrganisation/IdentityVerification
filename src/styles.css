@@ -120,6 +120,14 @@ a.menu-link:hover::after {
   }
 }
 
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; /* Ensure the element is a block or inline-block */
+  width: 100%; /* Ensure the element has a defined width */
+}
+
 .hero-container {
   display: flex;
   gap: 2em;
@@ -382,6 +390,21 @@ h2 {
 .warn {
   color: #c23667;
 }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; /* Ensure the element is a block or inline-block */
+  width: 100%; /* Ensure the element has a defined width */
+}
+
+.wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
 
 section,
 .section-left,
